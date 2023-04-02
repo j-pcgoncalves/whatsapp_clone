@@ -10,6 +10,8 @@ class MobileScreenLayout extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: appBarColor,
+          elevation: 0,
           title: const Text(
             'Whatsapp',
             style: TextStyle(
