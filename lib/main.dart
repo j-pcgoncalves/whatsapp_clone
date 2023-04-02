@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
+import 'package:whatsapp_clone/responsive/responsive_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         backgroundColor: backgroundColor,
       ),
-      home: const Text('Hello World'),
+      home: ResponsiveLayout(
+          mobileScreenLayout: mobileScreenLayout,
+          webScreenLayout: webScreenLayout),
     );
   }
 }
